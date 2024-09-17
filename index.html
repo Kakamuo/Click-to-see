@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+&nbsp;<html>
 <head>
   <style>
     /* Style for countdown display */
@@ -26,7 +25,8 @@
       }, 1000); // 1000 milliseconds = 1 second
     }
 
-    function startSequence() {
+    // Start the countdowns after page load
+    window.onload = function() {
       // Delay opening the first link by 5 seconds
       setTimeout(function() {
         window.open('https://www.cpmrevenuegate.com/a2ir5i5ftd?key=7d119beb41b34361cf4fb6c139f8fbc2', '_blank');
@@ -34,12 +34,11 @@
         // Start the second countdown after opening the first link
         openSecondLink();
       }, 5000); // 5000 milliseconds = 5 seconds
-    }
+    };
   </script>
 </head>
 <body>
-  <h2>Click the button to start the sequence.</h2>
-  <button onclick="startSequence()">Start Sequence</button>
+  <h2>Trust is important. Your second link will open in 10 seconds.</h2>
   <div id="countdown2"></div>
 </body>
 </html>
