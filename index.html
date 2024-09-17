@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Style for countdown display */
+    #countdown2 {
+      font-size: 24px; /* Adjust the size as needed */
+      font-weight: bold;
+      color: #333; /* Adjust the color as needed */
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    function openSecondLink() {
+      var countdown = 10;
+      var countdownElement = document.getElementById("countdown2");
+
+      var timer = setInterval(function() {
+        countdownElement.innerHTML = "Your second link will open in " + countdown + " seconds.";
+        countdown--;
+        if (countdown < 0) {
+          clearInterval(timer);
+          countdownElement.innerHTML = "Opening the second link now!";
+          window.open('https://www.google.co.uk/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F236x%2F74%2F7c%2F5c%2F747c5c9d6727452611d6d7a8abdfcecf.jpg&tbnid=X9c_TymqNG18XM&vet=1&imgrefurl=https%3A%2F%2Fwww.pinterest.com%2Fhaquanazumi%2Fanime-boy%2F&docid=NU2g9peVDqoNhM&w=236&h=438&source=sh%2Fx%2Fim%2Fm1%2F2&kgs=5b0f11c2f32c59cc&shem=abme%2Ctrie', '_blank');
+        }
+      }, 1000); // 1000 milliseconds = 1 second
+    }
+
+    // Start the countdowns after page load
+    window.onload = function() {
+      // Delay opening the first link by 5 seconds
+      setTimeout(function() {
+        window.open('https://www.cpmrevenuegate.com/a2ir5i5ftd?key=7d119beb41b34361cf4fb6c139f8fbc2', '_blank');
+        
+        // Start the second countdown after opening the first link
+        openSecondLink();
+      }, 5000); // 5000 milliseconds = 5 seconds
+    };
+  </script>
+</head>
+<body>
+  <h2>Trust is important. Your second link will open in 10 seconds.</h2>
+  <div id="countdown2"></div>
+</body>
+</html>
